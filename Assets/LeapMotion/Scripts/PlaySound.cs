@@ -14,9 +14,17 @@ public class PlaySound : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
-        if(other.collider.tag == "Player")
+        if(other.collider.tag == "Player" && !audioSource.isPlaying)
         {
             audioSource.Play();
+        }
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        if (other.collider.tag == "Player" && audioSource.isPlaying)
+        {
+            audioSource.Stop();
         }
     }
 }
