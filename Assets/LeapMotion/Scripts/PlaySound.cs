@@ -14,8 +14,9 @@ public class PlaySound : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
-          Debug.Log("Hello");
-          audioSource.Play();
+        if(other.collider.tag == "Player")
+        {
+            audioSource.Play();
+        }
     }
-
 }
