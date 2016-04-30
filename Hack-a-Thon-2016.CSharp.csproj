@@ -69,7 +69,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\LeapC\Arm.cs" />
     <Compile Include="Assets\LeapC\Bone.cs" />
     <Compile Include="Assets\LeapC\CSharpExtensions.cs" />
@@ -105,6 +104,7 @@
     <Compile Include="Assets\LeapC\TimeBracket.cs" />
     <Compile Include="Assets\LeapC\TrackedQuad.cs" />
     <Compile Include="Assets\LeapC\Vector.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\CameraController.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\HandFactory.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\HandPool.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\HandProxy.cs" />
@@ -132,6 +132,7 @@
     <Compile Include="Assets\LeapMotion\Scripts\LeapImageRetriever.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\LeapProvider.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\LeapServiceProvider.cs" />
+    <Compile Include="Assets\LeapMotion\Scripts\PlaySound.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\PlayerController.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\Utils\DisconnectionNotice.cs" />
     <Compile Include="Assets\LeapMotion\Scripts\Utils\EnableDepthBuffer.cs" />
