@@ -22,16 +22,22 @@ public class MainMenuGuiScript : MonoBehaviour
     {
         GUILayout.BeginArea(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 200, 200));
         GUILayout.FlexibleSpace();
+        GUI.Label(new Rect(10, 50, 50, 50), " Press EXC anytime to exit ");
 
         if (GUILayout.Button("Start Game"))
         {
             StartGame();
         }
+        
+            if (Input.GetKey("escape"))
+        { 
+                Application.Quit();
 
-        if (GUILayout.Button("Press or Press EXC anytime during game to exit "))
-        {
-            EndGame();
         }
+
+        //  {
+        //     EndGame();
+        // }
         GUILayout.FlexibleSpace();
         GUILayout.EndArea();
     }
