@@ -7,6 +7,5 @@ public class rigi : MonoBehaviour
     {
         if (Input.GetKey("escape"))
             Application.Quit();
-
     }
 }
