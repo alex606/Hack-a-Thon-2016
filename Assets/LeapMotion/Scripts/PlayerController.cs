@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -11,10 +12,12 @@ public class PlayerController : MonoBehaviour {
     public Camera camera;
 
     private bool inAir { get; set; }
+    private Vector3 startPosition;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        startPosition = transform.position;
     }
 
     void FixedUpdate()
@@ -52,6 +55,12 @@ public class PlayerController : MonoBehaviour {
                 rb.AddForce(Vector3.up * jumpSpeed);
                 inAir = true;
             }
+        }
+
+        // Reset Level
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
         }
 
     }
