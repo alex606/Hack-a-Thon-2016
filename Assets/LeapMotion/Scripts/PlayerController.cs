@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     private Rigidbody rb;
     private float distance = 0.5f;
+    public float jumpSpeed;
     public float rotationSpeed;
     public Camera camera;
+
+    private bool inAir { get; set; }
 
     void Start()
     {
@@ -16,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += camera.transform.forward * Time.deltaTime * speed;
@@ -37,9 +40,27 @@ public class PlayerController : MonoBehaviour {
         {
             transform.Rotate(0, Time.deltaTime * rotationSpeed, 0);
         }
-        else if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q))
         {
             transform.Rotate(0, -Time.deltaTime * rotationSpeed, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!inAir)
+            {
+                rb.AddForce(Vector3.up * jumpSpeed);
+                inAir = true;
+            }
+        }
+
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        string colliderTag = other.collider.tag;
+        if (colliderTag == "Floor" || colliderTag == "Wall")
+        {
+            inAir = false;
         }
     }
 }
