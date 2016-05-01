@@ -161,7 +161,6 @@ Assets/LeapMotion/Scripts/VR/LeapVRCameraControl.cs
 Assets/LeapMotion/Scripts/VR/LeapVRTemporalWarping.cs
 Assets/LeapMotion/Scripts/VR/TemporalWarpingStatus.cs
 Assets/Scripts/MainMenuGuiScript.cs
-Assets/camera/camera.cs
 Assets/rigi.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

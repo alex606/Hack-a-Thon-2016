@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour {
         // Reset Level
         if(Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
     }
