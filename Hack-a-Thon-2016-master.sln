@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack-a-Thon-2016-master.CSharp", "Hack-a-Thon-2016-master.CSharp.csproj", "{9ACC91F1-3820-F588-146D-BE683885DBAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack-a-Thon-2016-master.CSharp.Editor", "Hack-a-Thon-2016-master.CSharp.Editor.csproj", "{03433659-FC73-0A04-F188-4FB016EBDAAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ACC91F1-3820-F588-146D-BE683885DBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACC91F1-3820-F588-146D-BE683885DBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACC91F1-3820-F588-146D-BE683885DBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACC91F1-3820-F588-146D-BE683885DBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03433659-FC73-0A04-F188-4FB016EBDAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03433659-FC73-0A04-F188-4FB016EBDAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03433659-FC73-0A04-F188-4FB016EBDAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03433659-FC73-0A04-F188-4FB016EBDAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
